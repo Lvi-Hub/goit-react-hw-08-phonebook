@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { Filter } from './Filter';
 import { ContactList } from './ContactList';
-import { fetchContacts } from 'redux/contactOperation';
-import { getError, getIsLoading } from 'redux/selector';
+import { fetchContacts } from 'redux/contacts/operations';
+import { getError, getIsLoading } from 'redux/contacts/selectors';
 
 export function App() {
   const dispatch = useDispatch();
