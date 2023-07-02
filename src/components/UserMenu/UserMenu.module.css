@@ -1,0 +1,33 @@
+.title {
+  font-weight: 500;
+  color: #2a363b;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logoutBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+
+  cursor: pointer;
+  color: #2a363b;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #2a363b;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #2a363b;
+    border: 1px solid #2a363b;
+  }
+}

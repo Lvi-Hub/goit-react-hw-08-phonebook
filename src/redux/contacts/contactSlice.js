@@ -4,7 +4,7 @@ import {
   addContact,
   deleteContact,
   fetchContacts,
-} from 'redux/contacts/operations';
+  } from 'redux/contacts/operations';
 
 export function handlePending(state) {
   state.isLoading = true;
@@ -14,7 +14,7 @@ export function handleRejected(state, { payload }) {
   state.isLoading = false;
   state.error = payload;
 }
-export function handleFetchContact(state, { payload }) {
+export function handleFetchContact(state,  {payload} ) {
   state.isLoading = false;
   state.items = payload;
 }
@@ -26,6 +26,13 @@ export function handleAddContact(state, { payload }) {
 export function handleDeleteContact(state, { payload }) {
   state.isLoading = false;
   state.items = state.items.filter(contact => contact.id !== payload.id);
+}
+
+export function handlePatchContact(state, { payload }) {
+  state.isLoading = false;
+  state.items = state.items.map(contact =>
+    contact.id !== payload.id ? contact : payload
+  );
 }
 
 const contactSlice = createSlice({

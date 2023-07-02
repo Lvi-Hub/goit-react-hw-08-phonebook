@@ -4,6 +4,7 @@
   align-items: first baseline;
   flex-direction: column;
   gap: 15px;
+  padding-top: 50px;
   padding-left: 50px;
   width: 500px;
   font-size: 18px;
