@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[290],{290:function(e,n,o){o.r(n),o.d(n,{default:function(){return r}});var a="Home_container__w+u63",c="Home_title__L087v",i=o(184);function r(){return(0,i.jsx)("div",{className:a,children:(0,i.jsxs)("h1",{className:c,children:["Phonebook welcome page"," ",(0,i.jsx)("span",{role:"img","aria-label":"Greeting icon",children:"\ud83d\udc81\u200d\u2640\ufe0f"})]})})}}}]);
+//# sourceMappingURL=290.115104f0.chunk.js.map
