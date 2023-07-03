@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { getContacts } from 'redux/contacts/selectors';
+import { toastError } from 'components/Toast/Toast';
 
 export function ContactForm() {
   const contacts = useSelector(getContacts);
@@ -19,7 +20,7 @@ export function ContactForm() {
     console.log(checkContacts);
 
     if (checkContacts.includes(submitName.toLowerCase())) {
-      alert('The contact has already existed');
+      toastError('The contact has already existed');
       return;
     } else {
       dispatch(

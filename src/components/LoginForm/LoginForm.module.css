@@ -1,5 +1,10 @@
-.form {
+.submitForm {
+  padding: 20px;
   width: 320px;
+  min-height: 120px;
+  margin: 40px auto 0px auto;
+  border: 1.5px solid #2a363b;
+  border-radius: 5px;
 }
 
 .label {
